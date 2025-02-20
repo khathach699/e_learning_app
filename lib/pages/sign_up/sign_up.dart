@@ -6,8 +6,8 @@ import 'package:e_learning_app/pages/sign_in/widgets/sign_in_widget.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
-class SignIn extends StatelessWidget {
-  const SignIn({super.key});
+class SignUP extends StatelessWidget {
+  const SignUP({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -21,16 +21,21 @@ class SignIn extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                //top login button
-                thirdPartyLogin(),
-
+                SizedBox(height: 30.h),
                 // more login options
                 Center(
                   child: text14Normal(
-                    text: "Or use your email account to login.",
+                    text: "Enter your details below & free sign up",
                   ),
                 ),
                 SizedBox(height: 50.h),
+                // user name
+                appTextField(
+                  text: "User name",
+                  iconName: "assets/icons/user.png",
+                  hintText: "Enter your user name",
+                ),
+                SizedBox(height: 20.h),
                 //email text box
                 appTextField(
                   text: "Email",
@@ -46,23 +51,28 @@ class SignIn extends StatelessWidget {
                   obscureText: true,
                 ),
                 SizedBox(height: 20.h),
+                // confirm password
+                appTextField(
+                  text: "Confirm Password",
+                  iconName: "assets/icons/lock.png",
+                  hintText: "Enter your Confirm Password",
+                  obscureText: true,
+                ),
+                SizedBox(height: 20.h),
                 Container(
-                  padding: EdgeInsets.only(left: 25.w),
-                  child: textUnderLine(text: "Forgot password?"),
+                  margin: EdgeInsets.only(left: 25.w),
+                  child: text14Normal(
+                    text:
+                        "By creating an account you are agreeing with our terms and conditions ",
+                  ),
                 ),
                 SizedBox(height: 100.h),
-
-                //app login button
-                Center(child: appButton(buttonName: "Login")),
-
-                SizedBox(height: 20.h),
                 // app register button
                 Center(
                   child: appButton(
                     buttonName: "Register",
-                    isLogin: false,
+                    isLogin: true,
                     context: context,
-                    func: () => Navigator.pushNamed(context, "/register"),
                   ),
                 ),
               ],

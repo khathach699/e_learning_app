@@ -35,11 +35,27 @@ Widget text14Normal({
 }) {
   return Text(
     text,
-    textAlign: TextAlign.center,
+    textAlign: TextAlign.start,
     style: TextStyle(
       fontSize: 14.sp,
       color: color,
       fontWeight: FontWeight.normal,
+    ),
+  );
+}
+
+Widget textUnderLine({String text = "Your text"}) {
+  return GestureDetector(
+    onTap: () {},
+    child: Text(
+      text,
+      style: TextStyle(
+        color: AppColors.primaryText,
+        decoration: TextDecoration.underline,
+        decorationColor: AppColors.primaryText,
+        fontWeight: FontWeight.normal,
+        fontSize: 12.sp,
+      ),
     ),
   );
 }
