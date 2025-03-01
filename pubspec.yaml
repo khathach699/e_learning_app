@@ -14,6 +14,10 @@ dependencies:
   cupertino_icons: ^1.0.8
   flutter_riverpod: ^2.6.1
   flutter_screenutil: ^5.9.3
+  riverpod_annotation: ^2.6.1
+  build_runner: ^2.4.15
+  riverpod_generator: ^2.6.5
+  fluttertoast: ^8.2.12
 
 dev_dependencies:
   flutter_test:

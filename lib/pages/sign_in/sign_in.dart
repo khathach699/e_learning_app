@@ -15,7 +15,7 @@ class SignIn extends StatelessWidget {
       color: Colors.white,
       child: SafeArea(
         child: Scaffold(
-          appBar: buildAppbar(),
+          appBar: buildAppbar(title: "Sign In"),
           backgroundColor: Colors.white,
           body: SingleChildScrollView(
             child: Column(
