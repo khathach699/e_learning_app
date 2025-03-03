@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 Widget appTextField({
+  TextEditingController? controller,
   String text = "",
   String iconName = "",
   String hintText = "Type your in info",
@@ -33,6 +34,7 @@ Widget appTextField({
                 width: 280.w,
                 height: 50.h,
                 child: TextField(
+                  controller: controller,
                   onChanged: (value) => func!(value),
                   keyboardType: TextInputType.multiline,
                   decoration: InputDecoration(

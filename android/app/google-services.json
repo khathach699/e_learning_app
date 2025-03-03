@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "373886346292",
+    "project_id": "ulearning-app-3b8bc",
+    "storage_bucket": "ulearning-app-3b8bc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373886346292:android:2ce6ea488c116392fd5661",
+        "android_client_info": {
+          "package_name": "com.example.e_learning_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPLu_EpZwn_SvWNrwEFj_ztfJiMcAWFmA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
